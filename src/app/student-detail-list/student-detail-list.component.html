@@ -1,0 +1,26 @@
+<table border=1>
+    <thead>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Mark1</th>
+        <th>Mark2</th>
+        <th>Mark3</th>
+        <th>Mark4</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studentService.studentList">
+            <th>{{ student.id }}</th>
+            <th>{{ student.name }}</th>
+            <th>{{ student.mark1 }}</th>
+            <th>{{ student.mark2 }}</th>
+            <th>{{ student.mark2 }}</th>
+            <th>{{ student.mark3 }}</th>
+            <th>
+                <button (click)="studentService.calculateTotal(student)"> Total</button>
+                <button (click)="studentService.edit(student)"> Edit</button>
+            </th>
+
+        </tr>
+    </tbody>
+</table>

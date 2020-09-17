@@ -1,0 +1,66 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Product } from './product';
+import { Observable } from 'rxjs';
+import { Category } from '../site-framework/category';
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProductsService {
+  addNewProduct(newProduct: { id: number; category_id: any; name: any; description: any; price: any; isAvailable: any; rating: any; reviews: string; productImg: string; }) {
+    throw new Error('Method not implemented.');
+  }
+
+  constructor(private httpClient:HttpClient) { }
+
+  getAllProducts():Observable<Product>
+  {
+   const productUrl ="http://localhost:3000/products";
+   return this.httpClient.get<Product>(productUrl);
+  }
+  createProduct(productBody):Observable<Product>
+  {
+    const productUrl ="http://localhost:3000/products";
+    return this.httpClient.post<Product>(productUrl,productBody); //return an observable
+  }
+
+  viewProduct(productId):Observable<Product>
+  {
+    const productUrl ="http://localhost:3000/products/"+productId;
+    return this.httpClient.get<Product>(productUrl); //return an observable
+  }
+
+  updateProduct(productId,productbody):Observable<Product>
+  {
+    const productUrl ="http://localhost:3000/products/"+productId;
+    return this.httpClient.put<Product>(productUrl,productbody); //return an observable
+  }
+
+  deleteProduct(productId):Observable<Product>
+  {
+    const productUrl ="http://localhost:3000/products/"+productId;
+    return this.httpClient.delete<Product>(productUrl);//return an observable
+  }
+
+  searchCategoryProducts(categoryId): Observable<Product>{
+    const productUrl = 'http://localhost:3000/products?category_id='+categoryId;
+    return this.httpClient.get<Product>(productUrl); // return an observable
+  }
+
+  searchDateProducts(dateParam):Observable<Product>
+  {
+    const productUrl ="http://localhost:3000/products/date="+dateParam;
+    return this.httpClient.get<Product>(productUrl);//return an observable
+  }
+
+  getCategories():Observable<Category>{
+    const categoryUrl ="http://localhost:3000/categories/";
+    return this.httpClient.get<Category>(categoryUrl);
+  }
+  
+
+
+
+}

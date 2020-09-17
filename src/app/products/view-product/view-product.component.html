@@ -1,0 +1,16 @@
+<div class="card mt-4 mb-4">
+    <img class="card-img-top img-fluid" src="{{ productDetails.productImg }}" alt="" width="900" height="200">
+    <div class="card-body">
+        <h3 class="card-title">
+            <a routerLink="product/{{ productDetails.id }}">{{ productDetails.name }}</a>
+        </h3>
+
+        <a href="products/update-product/{{ productDetails.id }}">Update Product</a>
+        <h4>Rs.{{ productDetails.price }}</h4>
+        <p class="card-text">{{ productDetails.description }}</p>
+        <h4>{{ productDetails.id }}</h4>
+        <span class="text-primary">{{ productDetails.reviews }}</span> Reviews
+
+    </div>
+</div>
+<!-- /.card -->

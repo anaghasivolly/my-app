@@ -1,0 +1,125 @@
+<!--<div class="d-flex justify-content-center">
+    <h1>Add products</h1>
+</div>
+<form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm">
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <label> Product Name: </label>
+            <input type="text" value="Enter product name" class=" form-control " required name="product_name " ngModel>
+        </div>
+        <div class="col-md-12 mb-3 ">
+            <label> Product Price </label>
+            <input type="text " class="form-control " required name="product_price " ngModel>
+        </div>
+        <div class="col-md-12 mb-3 ">
+            <label>Product Color </label>
+            <input type="text " class="form-control " required name="product_color " ngModel>
+        </div>
+        <div class="col-md-12 mb-3 ">
+            <label>Product Rating</label>
+            <select class="custom-select " required name="product_rating " ngModel>
+                <option selected value=" ">Choose Option.. </option>
+                <option value="1 ">1</option>
+                <option value="2 ">2</option>
+                <option value="3 ">3</option>
+                <option value="4 ">4</option>
+                <option value="5 ">5</option>
+            </select>
+        </div>
+        <div class="col-md-12 mb-3 ">
+            <label>Category</label>
+            <select class="custom-select " required name="product_category " ngModel>
+                <option selected value=" ">Choose Option.. </option>
+                <option value="1 ">Huawei</option>
+                <option value="2 ">Vivo</option>
+                <option value="3 ">Samsung</option>
+                <option value="4 ">Nokia</option>
+                <option value="5 ">Redmi</option>
+            </select>
+        </div>
+        <div class="col-md-12 ">
+            <label> Is Availbale</label>
+            <select class="custom-select " required name="is_available " ngModel>
+                <option value=" ">Choose an Option</option>
+                <option value="1 ">Yes</option>
+                <option value="2 ">No</option>
+            </select>
+        </div>
+        <div class=" col-12 col-md-12 mb-3 ">
+            <label>Product Description:</label>
+            <textarea class="form-control " rows="5 " required name="product_description " ngModel></textarea>
+        </div>
+
+        <div class="col-4 col-md-4 mb-3 ">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+
+        </div>
+    </div>
+</form>-->
+
+<h2 class="bg-light mb-2">Add New Product</h2>
+<form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm">
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <label>Product Name</label>
+            <input type="text" class="form-control" value="Enter Product Name" required name="product_name" ngModel>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label>Category</label>
+            <select class="custom-select" required name="product_category" ngModel>
+                
+                <option>Choose..</option>
+                <option *ngFor ="let cat of categoryList" [value]="cat">{{ cat }}</option>
+              </select>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label>Description</label>
+            <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="product_description" ngModel>
+        </textarea>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label>Rating</label>
+            <select class="custom-select" required name="product_rating" ngModel>
+          <option selected value="">Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        </div>
+
+
+        <div class="col-md-12 mb-3">
+            <label>Product Color</label>
+            <input type="text" class="form-control" value="Enter Product Name" required name="product_color" ngModel>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label>Is Available</label>
+            <select class="custom-select" required name="product_available" ngModel>
+            <option selected value="">Choose...</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </div>
+
+
+        <div class="col-md-12 mb-3">
+            <label>Product Price</label>
+            <input type="text" class="form-control" value="Enter Product Name" required name="product_price" ngModel>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label>Reviews</label>
+            <select class="custom-select" required name="product_reviews" ngModel>
+            <option selected value="">Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>

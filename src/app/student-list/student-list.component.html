@@ -1,0 +1,5 @@
+<div>
+    <li *ngFor="let student of studentService.studentList" (click)="studentService.calculateTotal(student)">
+        {{student.name}}
+    </li>
+</div>

@@ -1,0 +1,18 @@
+<h1> {{ "Hi " + name }} </h1>
+<div>
+    <label>Name:
+      <input [(ngModel)]="name" placeholder="name"  class="text"/>
+    </label>
+</div>
+<br>
+<button (click)="Submit()">Submit</button>
+<p *ngIf="isSubmit; else noSubmit"> Submitted</p>
+<ng-template #noSubmit>
+    <p>Please enter your name</p>
+</ng-template>
+
+<ul class="products">
+    <li *ngFor="let product of ProductList">
+        <span class="badge">{{product.id}}</span> {{product.name}}
+    </li>
+</ul>

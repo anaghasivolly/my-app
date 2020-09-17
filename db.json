@@ -1,0 +1,92 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Samsung Galaxy J2",
+            "category_id": "3",
+            "description": "The Galaxy J2 is powered by an Exynos 3475 SoC including a quad-core 1.3 GHz ARM Cortex-A7 CPU, an ARM Mali-T720 GPU and 1 GB RAM. The 8 GB internal storage can be upgraded up to 256 GB via microSD card.It features a 4.7-inch Super AMOLED display.",
+            "price": "5000",
+            "is_available": true,
+            "ratings": 4,
+            "reviews": 189,
+            "productImg": "http://localhost:4200/assets/images/SamsungGalaxyJ2.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Redmi Note 7",
+            "category_id": "5",
+            "description": "The Redmi Note 7(lavender) and Note 7 Pro(violet), both have a 6.3-inch full HD+ (2340x1080 pixels) display with a 19.5:9 aspect ratio. The Redmi Note 7 is powered by an 14nm Octa-Core Snapdragon 660 SoC.",
+            "price": "15000",
+            "is_available": true,
+            "ratings": 3,
+            "reviews": 199,
+            "productImg": "http://localhost:4200/assets/images/RedmiNote7.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Nokia 7.2",
+            "category_id": "4",
+            "description": "This Nokia smartphone comes with a triple-sensor rear camera featuring ZEISS Optics. Its 48 MP main sensor is ideal for capturing fine details, the 5 MP depth sensor captures true-to-life ZEISS portraits, and the 8 MP sensor has an ultra-wide 118° lens",
+            "price": "25000",
+            "is_available": true,
+            "ratings": 3,
+            "reviews": 145,
+            "productImg": "http://localhost:4200/assets/images/Nokia7.2.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Vivo V15 Pro",
+            "category_id": "2",
+            "description": "The Vivo V15 Pro smartphone comes with a notch free screen. It offers a 6.39-inch FHD+ Ultra Fullview Super AMOLED display with 19.5:9 aspect ratio and 91.64%Screen to body ratio. The handset is powered by Qualcomm Snapdragon 675AIE with 6GB RAM and 128GB ROM which is expandable up to 256 GB.It runs on Android 9 Pie based FunTouch 9 operating system.",
+            "price": "13000",
+            "is_available": true,
+            "ratings": 3,
+            "reviews": 145,
+            "productImg": "http://localhost:4200/assets/images/vivoV15Pro.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Samsung Galaxy Z",
+            "category_id": "3",
+            "description": " Samsung Galaxy Z Flip smartphone was launched on 20th February 2020. The phone comes with a 6.70-inch touchscreen primary display with a resolution of 1080x2636 pixels at a pixel density of 425 pixels per inch (ppi). It also features a 1.10-inch as its second display, with a resolution of 112x300 pixels at a pixel density of 303 pixels per inch (ppi).",
+            "price": "17000",
+            "is_available": true,
+            "ratings": 3,
+            "reviews": 145,
+            "productImg": "http://localhost:4200/assets/images/samsungGalaxyZ.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Huawei Honor 8 Lite",
+            "category_id": "1",
+            "description": " It sports a 5.2-inch full HD display that makes the phone easy to use with one hand. Powering the phone is a Kirin 655 octa-core processor made by Huawei. The phone has 4GB of RAM and 64GB of internal storage. ... The 8 Lite runs Honor's latest EMUI 5.0 on top of Android 7.0 Nougat.",
+            "price": "14,933",
+            "is_available": true,
+            "ratings": 3,
+            "reviews": 145,
+            "productImg": "http://localhost:4200/assets/images/HuaweiHonor8Lite.jpg"
+        }
+
+    ],
+    "categories": [{
+            "id": 1,
+            "categoryName": "Huawei"
+        },
+        {
+            "id": 2,
+            "categoryName": "Vivo"
+        },
+        {
+            "id": 3,
+            "categoryName": "Samsung"
+        },
+        {
+            "id": 4,
+            "categoryName": "Nokia"
+        },
+        {
+            "id": 5,
+            "categoryName": "Redmi"
+        }
+    ],
+    "profile": { "name": "typicode" }
+}
