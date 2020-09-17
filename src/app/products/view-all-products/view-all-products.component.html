@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="container">
             <div class="table table-trapped">
                 <table>
@@ -33,24 +33,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let det of productList">
-                            <!--| paginate:{id :'listing-pagination',
+                        <tr *ngFor="let det of productList| paginate:{id :'listing-pagination',
                         ItemsPerPage :10,
                         currentPage:page,
-                        totalItems:totalRecords}">-->
+                        totalItems:totalRecords}">
                             <td>{{ det.name }}</td>
                             <td>{{ det.category_id}}</td>
                             <td>{{ det.price}}</td>
                         </tr>
                     </tbody>
                 </table>
-                <!--
                 <div>
                     <pagination-controls id="listing-pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
-                </div>-->
+                </div>
             </div>
         </div>
-        <!--
+    -->
         <div class="col-lg-4 col-md-6 mb-4 ">
             <div class="card h-100 ">
                 <a href="# "><img class="card-img-top " src="assets/images/Nokia7.2.jpg " alt=" "></a>
@@ -144,7 +142,7 @@
                 </div>
             </div>
         </div>
-    -->
+
     </div>
     <!-- /.row -->
 
